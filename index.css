@@ -1,0 +1,50 @@
+@font-face {
+    src: url(fonts/CormorantGaramond-Medium.ttf);
+    font-family: Garamond;
+}
+
+body {
+    margin: 0;
+    font-family: Garamond, serif;
+    background-image: url(images/black-background.jpg)
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.container {
+    display: grid;
+    grid-template: auto / 1fr;
+    grid-gap: 1em;
+    margin: 0 1em 5em 1em;
+}
+
+.button-container {
+    background-color: #FFE0E0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.dog-image {
+    width: 100%;
+    border: 1px solid #FFE0E0;
+    border-radius: 3px;
+}
+
+#dogs-button {
+    font-family: Garamond, serif;
+    font-size: 1rem;
+    border: 1px solid #FFE0E0;
+    border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template: auto / 1fr 1fr 1fr;
+    }
+}
