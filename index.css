@@ -6,12 +6,12 @@
 body {
     margin: 0;
     font-family: Garamond, serif;
-    background-image: url(images/black-background.jpg)
+    background-image: url(images/black-background.jpg);
+    color: white;
 }
 
 h1 {
     text-align: center;
-    color: whitesmoke;
 }
 
 .container {
@@ -22,7 +22,7 @@ h1 {
 }
 
 .button-container {
-    background-color: #FFE0E0;
+    background-color: #514e56;
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -32,15 +32,16 @@ h1 {
 
 .dog-image {
     width: 100%;
-    border: 1px solid #FFE0E0;
+    border: 1px solid #3a363b;
     border-radius: 3px;
 }
 
 #dogs-button {
     font-family: Garamond, serif;
     font-size: 1rem;
-    border: 1px solid #FFE0E0;
     border-radius: 3px;
+    background-color: #3a363b;
+    color: white;
 }
 
 @media (min-width: 768px) {
