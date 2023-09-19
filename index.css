@@ -38,6 +38,7 @@ h1 {
 
 #dogs-button {
     font-family: Garamond, serif;
+    padding: .4em .8em;
     font-size: 1rem;
     border-radius: 3px;
     background-color: #3a363b;
