@@ -8,9 +8,14 @@ function fetchDogs(image) {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            image.innerHTML = `
-            <img class="dog-image" src="${data.message}">`
+            const dogImage = document.createElement("img")
+            dogImage.classList.add("dog-image")
+            dogImage.src = data.message
+            image.appendChild(dogImage)
+            // image.innerHTML = `
+            // <img class="dog-image" src="${data.message}">`
         })
+    image.replaceChildren()
 }
 
 dogsButton.addEventListener("click", function () {
