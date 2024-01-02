@@ -12,8 +12,6 @@ function fetchDogs(image) {
             dogImage.classList.add("dog-image")
             dogImage.src = data.message
             image.appendChild(dogImage)
-            // image.innerHTML = `
-            // <img class="dog-image" src="${data.message}">`
         })
     image.replaceChildren()
 }
